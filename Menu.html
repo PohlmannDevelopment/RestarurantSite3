@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--
+    Name: Shawn Pohlmann
+    Date Created: 12/20/18
+    Most recent revision: 12/30/18
+-->
+
+<html lang="en">
+<head>
+    <title>Midwest Steak</title>
+    <!-- External links -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <!-- CSS style for the specific page -->
+    <style>
+        #menu {
+            width: 90%;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            border: 5px solid black;
+            background-color: lightyellow;
+        }
+
+        #beverages {
+            text-align: left;
+            background-color: lightyellow;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            border: 5px solid black;
+            border-top: none;
+        }
+
+        #bevheader {
+            text-align: center;
+        }
+
+        #drink {
+            text-align: center;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+        #announcements {
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Checks if browser has javascript enabled-->
+    <noscript>This site is best viewed when Javascript is enabled</noscript>
+    <!-- Header -->
+    <header>
+        <h1>Midwest Steak</h1>
+    </header>
+
+    <!--Nav using tabs-->
+    <nav>
+
+        <ul class="nav nav-tabs" id="tabs">
+            <li>
+                <a href="index.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- The code for the bootstrap Carousel-->
+    <section id="announcements">
+        <div class="container" style="text-align:center;">
+            <h2>Special News!</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:white;">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <h3 class="rotate">Grand Opening for new Location!</h3>
+                        <p class="rotate" ">Midwest Steak is going to be opening a Chicago Location in Frebruary of 2019! Make your reservations now! </p>
+                    </div>
+                    <div class="item">
+                        <h3 class="rotate"> Season Menu Options!</h3>
+                        <p class="rotate">We will have an array of different food options for the holiday season included our Chef's specialty Beef Wellington!</p>
+                    </div>
+                    <div class="item">
+                        <h3 class="rotate"> Drink of the Month</h3>
+                        <p class="rotate"> Our Drink of the month is SG Special Brew. Come try it out before the month is over!</p>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-step-backward"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-step-forward"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- The menu using the bootstrap Grid -->
+    <section id="body1">
+        <div class="container-fluid" style="text-align:center; background-color:lightyellow; border-top:5px solid black; border-bottom:5px solid black;">
+
+            <div class="row" >
+                <div class="col-lg-4 col-md">
+                    <h2>New York Strip</h2>
+                    <p>One of the most popular cuts of steak in all of the country. A juicy New York strip cooked to preference served with a side of gralic mashed potatoes and a vegetable of choice<br />$18.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h2>Porterhouse</h2>
+                    <p>One of the juciest steaks out there. Get our juicy porterhouse cut cooked to preference with garlic mashed potatoes and a vegetable of choice<br />$16.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h2>Ribeye</h2>
+                    <p>The most popular cut of steak in the world. Enjoy our famous Ribeye with a couple of sides cooked to preference.<br />$20.99</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md">
+                    <h2>Prime Rib</h2>
+                    <p>We don't only serve steaks enjoy our 2-day marinated prime rib with a side salad and a choice of vegetable<br />$14.99</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h2>Roasted Chicken</h2>
+                    <p>Enjoy our pan roasted Chicken. Choose from a 1/2 or 1/4 chicken. <br />$12.99 (1/4) $15.99 (1/2)</p>
+                </div>
+                <div class="col-lg-4 col-md">
+                    <h2>Walleye</h2>
+                    <p>You won't get walleye any fresher unless you caught it yourself. We get daily deliveries for the night. Enjoy our buttered up walleye with your choice of sides<br />$17.99</p>
+                </div>
+            </div>
+            <div class="row" style="text-align:center; border-top:5px solid black;">
+                <div class="col-lg-12 col-md">
+                    <h2>Beverages</h2>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-lg-6 col-md">
+                    <p>Root Beer</p>
+                </div>
+                <div class="col-lg-6 col-md">
+                    <p>$3.00</p>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-lg-6 col-md">
+                    <p>Bottled Water</p>
+                </div>
+                <div class="col-lg-6 col-md">
+                    <p>$1.25</p>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-lg-6 col-md">
+                    <p>Lemondae</p>
+                </div>
+                <div class="col-lg-6 col-md">
+                    <p>$1.00</p>
+                </div>
+            </div>
+            <div class="row" style="text-align:center;">
+                <div class="col-lg-6 col-md">
+                    <p>Iced Tea<p>
+                </div>
+                <div class="col-lg-6 col-md">
+                    <p>$1.25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <p id="foot">&copy; 2018 Shawn Pohlmann<br />123 Michigan St Minneapolis, MN 55111<br />651-555-5555</p>
+    </footer>
+    <!-- External links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
